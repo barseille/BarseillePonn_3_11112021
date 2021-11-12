@@ -37,7 +37,7 @@
   background-color: #eaeaea;
 }
 
-#map {
+.location__input {
   font-size: 20px;
   text-align: center;
   border: none;
