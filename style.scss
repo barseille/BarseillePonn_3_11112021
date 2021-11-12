@@ -8,31 +8,28 @@
   margin: 0;
 }
 .logo {
-  margin-top:1rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   height: 63px;
-  &__logo-img {
+  &__img {
     padding: 12px;
   }
 }
-.location{
+.location {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:50px;
- 
-  background-color:#EAEAEA ;
+  height: 50px;
 
+  background-color: #eaeaea;
 }
-#map{
-  font-size:20px;
+#map {
+  font-size: 20px;
   text-align: center;
-  border:none;
+  border: none;
   background-color: inherit;
- 
 }
 .fas.fa-map-marker-alt {
   font-size: 20px;
-  
 }

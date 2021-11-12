@@ -13,9 +13,8 @@
   </head>
   <body>
     <header class="entete">
-
       <div class="logo">
-        <img class="logo__logo-img" src="images/ohmyfood.png" alt="logodusite" />
+        <img class="logo__img" src="images/ohmyfood.png" alt="ohmyfood logo" />
       </div>
 
       <form method="post" action="#" class="location">
@@ -34,11 +33,114 @@
             <span class="explorer-texte">Explorer nos restaurants</span>
           </button>
         </form>
-    
       </div>
     </header>
-    <main class="menu"></main>
+    <main class="menu">
+      <h2>Fonctionnement</h2>
+
+      <form method="post" action="#">
+        <button class="btn-fonctionnement">
+          <span class="btn-number">1</span>
+          <i class="fas fa-mobile-alt"></i>
+          <p class="btn-text">Choisissez un restaurant</p>
+        </button>
+      </form>
+
+      <form method="post" action="#">
+        <button class="btn-fonctionnement">
+          <span class="btn-number">2</span>
+          <i class="fas fa-list-ul"></i>
+          <p class="btn-text">Composer votre menu</p>
+        </button>
+      </form>
+
+      <form method="post" action="#">
+        <button class="btn-fonctionnement">
+          <span class="btn-number">3</span>
+          <i class="fas fa-store"></i>
+          <p class="btn-text">Dégustez au restaurant</p>
+        </button>
+      </form>
+    </main>
+
     <section class="restaurant"></section>
-    <footer class="findepage"></footer>
+
+    <h2>Restaurants</h2>
+
+    <article class="card">
+      <a href="lapalettedugout.html">
+        <span class="card-label">Nouveau</span>
+        <img
+          class="card-img"
+          src="images/plat1.png"
+          alt="Restaurant La palette du goût"
+        />
+        <div class="card-description">
+          <div class="card-reference">
+            <h3>La palette du goût</h3>
+            <p>Ménilmontant</p>
+          </div>
+          <div class="card-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+    </article>
+
+    <article class="card">
+      <a href="menu2.html">
+        <span class="card-label">Nouveau</span>
+        <img
+          class="card-img"
+          src="images/plat2.png"
+          alt="Restaurant La note enchantée"
+        />
+        <div class="card-description">
+          <div class="card-reference">
+            <h3>La note enchantée</h3>
+            <p>Charonne</p>
+          </div>
+          <div class="card-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+    </article>
+
+    <article class="card">
+      <a href="menu3.html">
+        <img
+          class="card-img"
+          src="images/plat3.png"
+          alt="Restaurant À la française"
+        />
+        <div class="card-description">
+          <div class="card-reference">
+            <h3>À la française</h3>
+            <p>Cité Rouge</p>
+          </div>
+          <div class="card-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+    </article>
+
+    <article class="card">
+      <a href="menu4.html">
+        <img class="card-img" src="images/plat4.png" alt="Le délice des sens" />
+        <div class="card-description">
+          <div class="card-reference">
+            <h3>Le délice des sens</h3>
+            <p>Folie-méricourt</p>
+          </div>
+          <div class="card-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+    </article>
+
+    <footer class="footer">
+      <div class="footer-bloc">
+        <p class="footer-titre">ohmyfood</p>
+        <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
   </body>
 </html>

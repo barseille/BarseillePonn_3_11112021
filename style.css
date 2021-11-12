@@ -19,7 +19,7 @@
   height: 63px;
 }
 
-.logo__logo-img {
+.logo__img {
   padding: 12px;
 }
 
@@ -34,7 +34,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 #map {
