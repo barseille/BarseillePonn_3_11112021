@@ -100,7 +100,7 @@
 
 .fonctionnement {
   padding: 20px;
-  margin-top: 50px;
+  margin: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,19 +111,181 @@
 }
 
 .btn-bloc {
-  margin-top: 33px;
+  margin-top: 23px;
 }
 
 .btn-bloc__btn-fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
+  padding: 23px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  border: none;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0 5px 7px #c6c6c6;
+          box-shadow: 0 5px 7px #c6c6c6;
+}
+
+.btn-bloc__btn-fonctionnement:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #F5EDFF;
 }
 
 .btn-bloc__btn-number {
   background-color: #9356dc;
-  border-radius: 50%;
-  padding: 5%;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin-right: 25px;
+  margin-left: -12px;
+}
+
+.btn-bloc__btn-text {
+  font-weight: bold;
+}
+
+.btn-bloc__btn-icon {
+  margin-right: 25px;
+  color: #7E7E7E;
+}
+
+.btn-bloc__btn-icon:hover {
+  color: #9356dc;
+}
+
+.fas.fa-mobile-alt {
+  font-size: 1.2rem;
+  margin-right: 30px;
+}
+
+/*===========section===========*/
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 53px 20px 63px 20px;
+}
+
+.restaurant-card {
+  margin-top: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  gap: 17px;
+}
+
+.card {
+  height: 250px;
+  border-radius: 17px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 7px #c6c6c6;
+          box-shadow: 0 5px 7px #c6c6c6;
+  background-color: white;
+}
+
+.card-img {
+  height: 175px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 17px 17px 0 0;
+}
+
+.card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+  border-radius: 0 0 17px 17px;
+}
+
+.card-lien {
+  text-decoration: none;
+  color: black;
+}
+
+.card-label {
+  font-weight: bold;
+  position: absolute;
+  right: 11px;
+  top: 14px;
+  border: 1px solid #99E2D0;
+  border-radius: 5px;
+  background-color: #99E2D0;
+  color: #4CB49B;
+  padding: 10px;
+}
+
+.card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  font-size: 20px;
+}
+
+.fas.fa-heart {
+  display: none;
+}
+
+/*===========footer===============*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #353535;
+  padding: 25px 0 36px 23px;
+}
+
+.footer ul {
+  padding: 0;
+  margin-top: 26px;
+}
+
+.footer-bloc__footer-titre {
+  font-family: "Shrikhand","Roboto",sans-serif;
+  color: white;
+  font-size: 22px;
+}
+
+.footer-bloc__footer-icon {
+  list-style-type: none;
+  margin-top: 14px;
+}
+
+.footer-bloc__footer-text {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .fas {
+  margin-right: 10px;
+}
+
+.fas.fa-utensils {
+  font-size: 24px;
 }
 /*# sourceMappingURL=main.css.map */
