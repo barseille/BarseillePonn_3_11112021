@@ -1,0 +1,54 @@
+.section-restaurant {
+  background-color: $color-background;
+  padding: 53px 20px 63px 20px;
+}
+
+.restaurant {
+  margin-top: 29px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 17px;
+
+  &__card {
+    height: 250px;
+    border-radius: 17px;
+    position: relative;
+    box-shadow: 0 5px 7px $color-box-shadow;
+    background-color: white;
+  }
+  &__card-img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 17px 17px 0 0;
+  }
+  &__card-description {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border-radius: 0 0 17px 17px;
+  }
+  &__card-lien {
+    text-decoration: none;
+    color: black;
+  }
+  &__card-label {
+    font-weight: bold;
+    position: absolute;
+    right: 11px;
+    top: 14px;
+    border: 1px solid #99e2d0;
+    border-radius: 5px;
+    background-color: #99e2d0;
+    color: #4cb49b;
+    padding: 10px;
+  }
+  &__card-icon {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+  }
+}

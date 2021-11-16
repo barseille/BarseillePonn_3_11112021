@@ -1,0 +1,18 @@
+/*================header-accueil===========================*/
+.logo {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 63px;
+    &__img {
+      padding: 12px;
+    }
+  }
+  
+ 
+
+  /*=======================header-menu==================*/

@@ -13,7 +13,7 @@
   </head>
   <body>
     <!--*****************************header***********************************-->
-    <header class="entete">
+    <header class="header-accueil">
       <div class="logo">
         <img class="logo__img" src="/images/ohmyfood.png" alt="ohmyfood logo" />
       </div>
@@ -22,13 +22,7 @@
         <label for="map" class="location__map">
           <i class="fas fa-map-marker-alt"></i>
         </label>
-        <input
-          type="text"
-          name="map"
-          id="map"
-          value="Paris, Belleville"
-          class="location__input"
-        />
+        <input type="text" name="map" id="map" value="Paris, Belleville" class="location__input"/>
       </form>
     </header>
 
@@ -77,76 +71,84 @@
     </main>
 
     <!--***************************section*******************************-->
-    <section class="restaurant">
+    <section class="section-restaurant">
       <h2>Restaurants</h2>
 
-      <div class="restaurant-card">
-        <article class="card">
-          <a href="lapalettedugout.html" class="card-lien">
-            <span class="card-label">Nouveau</span>
+      <div class="restaurant">
+        <article class="restaurant__card">
+          <a href="lapalettedugout.html" class="restaurant__card-lien">
+            <span class="restaurant__card-label">Nouveau</span>
             <img
-              class="card-img"
+              class="restaurant__card-img"
               src="/images/plat1.png"
               alt="Restaurant La palette du goût"
             />
-            <div class="card-description">
-              <div class="card-reference">
+            <div class="restaurant__card-description">
+              <div class="restaurant__card-reference">
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <div class="card-icon"><i class="far fa-heart"></i></div>
+              <div class="restaurant__card-icon">
+                <i class="far fa-heart"></i>
+              </div>
             </div>
           </a>
         </article>
 
-        <article class="card">
-          <a href="Lanoteenchantee.html" class="card-lien">
-            <span class="card-label">Nouveau</span>
+        <article class="restaurant__card">
+          <a href="Lanoteenchantee.html" class="restaurant__card-lien">
+            <span class="restaurant__card-label">Nouveau</span>
             <img
-              class="card-img"
+              class="restaurant__card-img"
               src="/images/plat2.png"
               alt="Restaurant La note enchantée"
             />
-            <div class="card-description">
-              <div class="card-reference">
+            <div class="restaurant__card-description">
+              <div class="restaurant__card-reference">
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
               </div>
-              <div class="card-icon"><i class="far fa-heart"></i></div>
+              <div class="restaurant__card-icon">
+                <i class="far fa-heart"></i>
+              </div>
             </div>
           </a>
         </article>
 
-        <article class="card">
-          <a href="alafrancaise.html" class="card-lien">
+        <article class="restaurant__card">
+          <a href="alafrancaise.html" class="restaurant__card-lien">
             <img
-              class="card-img"
+              class="restaurant__card-img"
               src="/images/plat3.png"
               alt="Restaurant À la française"
             />
-            <div class="card-description">
-              <div class="card-reference">
+            <div class="restaurant__card-description">
+              <div class="restaurant__card-reference">
                 <h3>À la française</h3>
                 <p>Cité Rouge</p>
               </div>
-              <div class="card-icon"><i class="far fa-heart"></i></div>
+              <div class="restaurant__card-icon">
+                <i class="far fa-heart"></i>
+              </div>
             </div>
           </a>
         </article>
 
-        <article class="card">
-          <a href="ledelicedessens.html" class="card-lien">
+        <article class="restaurant__card">
+          <a href="ledelicedessens.html" class="restaurant__card-lien">
             <img
-              class="card-img"
+              class="restaurant__card-img"
               src="/images/plat4.png"
               alt="Le délice des sens"
             />
-            <div class="card-description">
-              <div class="card-reference">
+            <div class="restaurant__card-description">
+              <div class="restaurant__card-reference">
                 <h3>Le délice des sens</h3>
                 <p>Folie-méricourt</p>
               </div>
-              <div class="card-icon"><i class="far fa-heart"></i></div>
+              <div class="restaurant__card-icon">
+                <i class="far fa-heart"></i>
+              </div>
             </div>
           </a>
         </article>
@@ -171,7 +173,11 @@
             <a href="#" class="footer-bloc__footer-text">Mentions légales</a>
           </li>
           <li class="footer-bloc__footer-icon">
-            <a href="mailto:contact@ohmyfood.fr" class="footer-bloc__footer-text">Contact</a>
+            <a
+              href="mailto:contact@ohmyfood.fr"
+              class="footer-bloc__footer-text"
+              >Contact</a
+            >
           </li>
         </ul>
       </div>

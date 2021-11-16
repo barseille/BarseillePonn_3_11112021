@@ -1,0 +1,52 @@
+
+
+/*==========================button de header-accueil=====================*/
+
+.location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 50px;
+    background-color: #eaeaea;
+    box-shadow: inset 0 10px 5px -8px #c5c4c4;
+  
+    &__input {
+      font-size: 20px;
+      text-align: center;
+      border: none;
+      background-color: inherit;
+    }
+  }
+
+
+  /*====================button accueil description (créer mixin)==============*/
+  .btn {
+    margin-top: 2rem;
+  
+    &__btn-principal {
+      font-size: 20px;
+      padding: 1rem;
+      color: #fff;
+      background:$color-linear;
+      cursor: pointer;
+      border-radius: 25px;
+      border: none;
+      box-shadow: 0 5px 5px $color-box-shadow;
+      transition: 1s;
+      font-weight: bold;
+  
+      @media (min-width: 768px) {
+        &:hover {
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+  
+  
