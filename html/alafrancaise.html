@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/sass/main.css" />
     <script
       src="https://kit.fontawesome.com/051e9bb83a.js"
       crossorigin="anonymous"
@@ -13,37 +13,42 @@
   </head>
   <body>
     <!--*********************header****************************-->
-    <header class="entete">
+    <header class="header-menu">
       <div class="logo">
-        <a href="index.html"><i class="fas fa-arrow-left back"></i></a>
+        <a href="index.html" class="logo__header-fleche"
+          ><i class="fas fa-arrow-left back"></i
+        ></a>
         <img class="logo__img" src="/images/ohmyfood.png" alt="ohmyfood logo" />
       </div>
       <img
-        class="card-img"
+        class="header-menu__card-img"
         src="/images/plat3.png"
         alt="plat - À la française"
       />
     </header>
     <!--**************************main***************************-->
-    <main class="menu">
-      <div class="card-reference">
-        <h1>À la française</h1>
+    <main class="menu-page">
+      <div class="restaurant__card-description">
+        <div class="restaurant__card-reference">
+          <h1 class="restaurant__card-title">À la française</h1>
+        </div>
+        <div class="restaurant__card-icon"><i class="far fa-heart"></i></div>
       </div>
-      <div class="card-icon"><i class="far fa-heart"></i></div>
       <!--card-reference-->
 
       <div class="menu-card">
         <div class="menu-bloc">
-          <h3>ENTRÉES</h3>
+          <h3 class="menu-bloc__menu-title">ENTRÉES</h3>
+          <div class="menu-bloc__menu-line"></div>
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Tartare de poulpe acidulé</h4>
               <p>Aux zestes d'orange</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">25€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">25€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -51,14 +56,14 @@
           </div>
           <!--menu-description-->
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Velouté de légumes d'antan</h4>
               <p>Carotte, panais, topinambour</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">35€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">35€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -66,14 +71,14 @@
           </div>
           <!--menu-description-->
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Soupe à l'oignon</h4>
               <p>Revisitée</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">20€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">20€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -84,16 +89,17 @@
         <!--menu-bloc de l'entrées-->
 
         <div class="menu-bloc">
-          <h3>PLATS</h3>
+          <h3 class="menu-bloc__menu-title">PLATS</h3>
+          <div class="menu-bloc__menu-line"></div>
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Coquilles Saint-Jacques</h4>
               <p>Accompagnées d'une purée de panais</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">40€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">40€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -101,14 +107,14 @@
           </div>
           <!--menu-description-->
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Magret de canard</h4>
               <p>Et parmentier de pommes de terre</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">35€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">35€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -116,14 +122,14 @@
           </div>
           <!--menu-description-->
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Pigeonneau d’Ille-et-Vilaine</h4>
               <p>Sur son lit de gnocchis aux légumes</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">44€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">44€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -134,16 +140,17 @@
         <!--menu-bloc plats-->
 
         <div class="menu-bloc">
-          <h3>DESSERTS</h3>
+          <h3 class="menu-bloc__menu-title">DESSERTS</h3>
+          <div class="menu-bloc__menu-line"></div>
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Pétales de violettes glacés</h4>
               <p>Et purée de noisettes</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">18€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__enu-price">18€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -151,14 +158,14 @@
           </div>
           <!--menu-description-->
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Fondant au chocolat</h4>
-            <p>Revisité</p>
-           </div>
-            <div class="menu-valeur">
-              <div class="menu-price">22€</div>
-              <div class="menu-validation">
+              <p>Revisité</p>
+            </div>
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">22€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -166,14 +173,14 @@
           </div>
           <!--menu-description-->
 
-          <div class="menu-description">
-            <div class="menu-text">
+          <div class="menu-bloc__menu-description">
+            <div class="menu-bloc__menu-text">
               <h4>Millefeuille croustillant</h4>
               <p>Myrtilles et pâte d’amande</p>
             </div>
-            <div class="menu-valeur">
-              <div class="menu-price">23€</div>
-              <div class="menu-validation">
+            <div class="menu-bloc__menu-valeur">
+              <div class="menu-bloc__menu-price">23€</div>
+              <div class="menu-bloc__menu-validation">
                 <i class="fas fa-check-circle item__price__chosen--icon"></i>
               </div>
             </div>
@@ -186,32 +193,38 @@
       <!--menu-card-->
 
       <form method="post" action="#" class="btn">
-        <button class="btn-principal">
-          <span class="btn-text">Commander</span>
+        <button class="btn__btn-principal">
+          <span class="btn__btn-text">Commander</span>
         </button>
       </form>
- </main>
+    </main>
 
- <footer class="footer">
-  <div class="footer-bloc">
-    <p class="footer-titre">ohmyfood</p>
-    <ul>
-      <li>
-        <a href="#"
-          ><i class="fas fa-utensils"></i>Proposer un restaurant</a
-        >
-      </li>
-      <li>
-        <a href="#"
-          ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
-        >
-      </li>
-      <li><a href="#">Mentions légales</a></li>
-      <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
-    </ul>
-  </div>
-</footer>
-
-
+    <footer class="footer">
+      <div class="footer-bloc">
+        <p class="footer-bloc__footer-titre">ohmyfood</p>
+        <ul>
+          <li class="footer-bloc__footer-icon">
+            <a href="#" class="footer-bloc__footer-text"
+              ><i class="fas fa-utensils"></i>Proposer un restaurant</a
+            >
+          </li>
+          <li class="footer-bloc__footer-icon">
+            <a href="#" class="footer-bloc__footer-text"
+              ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
+            >
+          </li>
+          <li class="footer-bloc__footer-icon">
+            <a href="#" class="footer-bloc__footer-text">Mentions légales</a>
+          </li>
+          <li class="footer-bloc__footer-icon">
+            <a
+              href="mailto:contact@ohmyfood.fr"
+              class="footer-bloc__footer-text"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
