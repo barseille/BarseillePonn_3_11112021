@@ -4,3 +4,8 @@ $color-tertiary: #99e2d0;
 $color-background:#f6f6f6;
 $color-box-shadow:#c6c6c6;
 $color-linear:linear-gradient($color-secondary,$color-primary);
+
+/*media-query*/
+$smarthphone:375px;
+$tablette:768px;
+$desktop:1024px;

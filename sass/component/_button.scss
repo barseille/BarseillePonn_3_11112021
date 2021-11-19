@@ -21,17 +21,20 @@
       text-align: center;
       border: none;
       background-color: inherit;
+      width:150px;
     }
   }
 
 
   /*====================button accueil description (créer mixin)==============*/
   .btn {
-    margin-top: 2rem;
+    margin: 2rem;
+    display:flex;
+      justify-content:center;
   
     &__btn-principal {
-      font-size: 20px;
-      padding: 1rem;
+      font-size: 16px;
+      padding: 18px;
       color: #fff;
       background:$color-linear;
       cursor: pointer;
@@ -40,8 +43,10 @@
       box-shadow: 0 5px 5px $color-box-shadow;
       transition: 1s;
       font-weight: bold;
+      width:218px;
+      
   
-      @media (min-width: 768px) {
+      @media (min-width: $tablette) {
         &:hover {
           transform: scale(1.15);
         }

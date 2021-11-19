@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+/*media-query*/
 * {
   font-family: "Roboto", "Shrikhand", sans-serif;
   -webkit-box-sizing: border-box;
@@ -21,7 +22,7 @@
   height: 50px;
   background-color: #eaeaea;
   -webkit-box-shadow: inset 0 10px 5px -8px #c5c4c4;
-  box-shadow: inset 0 10px 5px -8px #c5c4c4;
+          box-shadow: inset 0 10px 5px -8px #c5c4c4;
 }
 
 .location__input {
@@ -29,56 +30,81 @@
   text-align: center;
   border: none;
   background-color: inherit;
+  width: 150px;
 }
 
 /*====================button accueil description (créer mixin)==============*/
 .btn {
-  margin-top: 2rem;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn__btn-principal {
-  font-size: 20px;
-  padding: 1rem;
+  font-size: 16px;
+  padding: 18px;
   color: #fff;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ff79da),
-    to(#9356dc)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
   border-radius: 25px;
   border: none;
   -webkit-box-shadow: 0 5px 5px #c6c6c6;
-  box-shadow: 0 5px 5px #c6c6c6;
+          box-shadow: 0 5px 5px #c6c6c6;
   -webkit-transition: 1s;
   transition: 1s;
   font-weight: bold;
+  width: 218px;
 }
 
 @media (min-width: 768px) {
   .btn__btn-principal:hover {
     -webkit-transform: scale(1.15);
-    transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 
 /*================header-accueil===========================*/
 .logo {
-  margin: 1rem;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 63px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*=================header-menu=========================*/
 }
 
 .logo__img {
   padding: 12px;
+  height: 60px;
+  position: relative;
+}
+
+.logo__header-fleche {
+  color: black;
+  position: absolute;
+  left: 21px;
+}
+
+.logo__header-fleche:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.header-menu__card-img {
+  height: 260px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*=======================header-menu==================*/
@@ -112,8 +138,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #353535;
   padding: 25px 0 36px 23px;
 }
@@ -129,11 +155,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f6f6f6;
   padding: 3rem;
   text-align: center;
@@ -142,7 +168,7 @@
 .description__p {
   margin-top: 1rem;
   font-size: 20px;
-  color: #c6c6c6;
+  color: #6e6e6e;
 }
 
 .fonctionnement {
@@ -153,8 +179,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btn-bloc {
@@ -166,24 +192,24 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   padding: 23px 0;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 15px;
   background-color: #f6f6f6;
   border: none;
   font-size: 1.1rem;
   -webkit-box-shadow: 0 5px 7px #c6c6c6;
-  box-shadow: 0 5px 7px #c6c6c6;
+          box-shadow: 0 5px 7px #c6c6c6;
 }
 
 .btn-bloc__btn-fonctionnement:hover {
   -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+          transform: scale(1.02);
   background-color: #f5edff;
 }
 
@@ -214,6 +240,7 @@
   margin-right: 30px;
 }
 
+/*=================accueil======================*/
 .section-restaurant {
   background-color: #f6f6f6;
   padding: 53px 20px 63px 20px;
@@ -226,10 +253,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   gap: 17px;
+  /*==================menu======================*/
 }
 
 .restaurant__card {
@@ -237,7 +265,7 @@
   border-radius: 17px;
   position: relative;
   -webkit-box-shadow: 0 5px 7px #c6c6c6;
-  box-shadow: 0 5px 7px #c6c6c6;
+          box-shadow: 0 5px 7px #c6c6c6;
   background-color: white;
 }
 
@@ -245,7 +273,7 @@
   height: 175px;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 17px 17px 0 0;
 }
 
@@ -254,10 +282,9 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 15px;
-  background-color: white;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 18px 0 18px;
   border-radius: 0 0 17px 17px;
 }
 
@@ -283,8 +310,66 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 20px;
+}
+
+.restaurant__card-title {
+  font-family: "shrikhand","Roboto",sans-serif;
+  font-size: 25px;
+}
+
+/*===================headedr-menu===================*/
+.menu-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px 25px 0 0;
+  margin-top: -30px;
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-bloc__menu-description {
+  background-color: white;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  padding: 10px;
+  height: 70px;
+  -webkit-box-shadow: 0 5px 7px #c6c6c6;
+          box-shadow: 0 5px 7px #c6c6c6;
+}
+
+.menu-bloc__menu-text {
+  line-height: 1.3;
+}
+
+.menu-bloc__menu-title {
+  margin-top: 36px;
+}
+
+.menu-bloc__menu-line {
+  border: 2px solid #99e2d0;
+  margin-top: 8px;
+  width: 40px;
+}
+
+.menu-card {
+  padding: 0 18px 18px 18px;
 }
 /*# sourceMappingURL=main.css.map */
