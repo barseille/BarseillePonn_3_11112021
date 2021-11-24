@@ -1,34 +1,45 @@
-.footer-bloc {
-    &__footer-titre {
-      font-family: "Shrikhand", "Roboto", sans-serif;
-      color: white;
-      font-size: 22px;
-    }
-  
-    &__footer-icon {
-      list-style-type: none;
-      margin-top: 14px;
-    }
-    &__footer-text {
-      text-decoration: none;
-      color: white;
+.footer {
+  background-color: #353535;
+  padding : 25px;
+  ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin:26px 0;
+  @media (min-width: $tablette){
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
-  .footer .fas {
-    margin-right: 10px;
-  }
-  .fas.fa-utensils {
-    font-size: 24px;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #353535;
-    padding: 25px 0 36px 23px;
-    ul {
-      padding: 0;
-      margin-top: 26px;
+}
+
+.footer-bloc{
+  &__footer-titre{
+  font-family:"Shrikhand", "Roboto", sans-serif;
+  color: white;
+  font-size : 22px;
+  @media (min-width: $tablette){
+      display: flex;
+      justify-content: center;
     }
-  }
-  
-  
+}
+  &__footer-icon{
+  list-style-type: none;
+  margin-top: 14px;
+ 
+}
+  &__footer-text{
+  color: white;
+  text-decoration: none;
+}
+}
+
+.fas.fa-hands-helping {
+margin-right: 10px;
+}
+
+.fas.fa-utensils{
+  margin-right: 16px;
+}
+
+

@@ -3,7 +3,13 @@
     margin: 50px 0;
     display: flex;
     flex-direction: column;
+    @media (min-width: $desktop){
+      flex-basis: 38%;
+     margin:0;
+     padding:0;
+    }
   }
+
   .btn-bloc {
     margin-top: 23px;
     &__btn-fonctionnement {
@@ -23,12 +29,7 @@
       }
     }
     &__btn-number {
-      background-color: $color-primary;
-      color: white;
-      border-radius: 50px;
-      padding: 5px 10px;
-      margin-right: 25px;
-      margin-left: -12px;
+      @include fonctionnement-card-number;
     }
     &__btn-text {
       font-weight: bold;

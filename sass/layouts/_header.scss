@@ -1,4 +1,4 @@
-/*================header-accueil===========================*/
+/*================header page d'accueil===========================*/
 .logo {
     margin: 10px;
     display: -webkit-box;
@@ -14,7 +14,7 @@
       height:60px;
       position:relative;
     }
-    /*=================header-menu=========================*/
+    /*=================header page menu=========================*/
     &__header-fleche{
       color:black;
       position:absolute;
@@ -25,17 +25,9 @@
     }
   }
   .header-menu{
-   
-   
     &__card-img{
       height:260px;
       width:100%;
-      object-fit: cover;
-      
+      object-fit: cover;   
     }
   }
-
-  
- 
-
-  /*=======================header-menu==================*/
