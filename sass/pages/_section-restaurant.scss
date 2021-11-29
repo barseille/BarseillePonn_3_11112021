@@ -33,12 +33,14 @@
     object-fit: cover;
     border-radius: 17px 17px 0 0;
   }
-  &__card-description {
+  &__card-description-accueil {
     display: flex;
     justify-content: space-between;
     padding: 18px 18px 0 18px;
     border-radius: 0 0 17px 17px;
-  }
+
+    }
+  
 
   &__card-lien {
     text-decoration: none;
@@ -61,6 +63,7 @@
       display: flex;
       justify-content: space-around;
     }
+   
   }
 
   /*==================page menu======================*/
@@ -68,5 +71,17 @@
   &__card-title {
     font-family: "shrikhand", "Roboto", sans-serif;
     font-size: 25px;
-  }
+    
+    }
+    &__card-description {
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 18px 0 18px;
+      border-radius: 0 0 17px 17px;
+       @media (min-width:$desktop){
+         justify-content:center;
+         gap:30px;
+       }
+      }
 }
+

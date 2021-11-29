@@ -26,6 +26,9 @@
       &:hover {
         transform: scale(1.02);
         background-color: #f5edff;
+        &:hover > .fas{
+          color:$color-primary;
+        }
       }
     }
     &__btn-number {

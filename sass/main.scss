@@ -14,10 +14,10 @@
 .loader {
   position: fixed;
   background-color: #fff;
-  height: 200vh;
+  height: 100vh;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   opacity: 1;
   animation: disappear 200ms 3s forwards;
 
@@ -86,6 +86,6 @@
 }
 
 
-/*prix des assiettes*/
+
 
 

@@ -266,6 +266,10 @@
   background-color: #f5edff;
 }
 
+.btn-bloc__btn-fonctionnement:hover:hover > .fas {
+  color: #9356dc;
+}
+
 .btn-bloc__btn-number {
   background-color: #9356dc;
   color: white;
@@ -343,7 +347,7 @@
   border-radius: 17px 17px 0 0;
 }
 
-.restaurant__card-description {
+.restaurant__card-description-accueil {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,6 +415,26 @@
   font-size: 25px;
 }
 
+.restaurant__card-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px 18px 0 18px;
+  border-radius: 0 0 17px 17px;
+}
+
+@media (min-width: 1024px) {
+  .restaurant__card-description {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
+
 .menu-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,16 +462,66 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 15px;
   height: 68px;
+  cursor: pointer;
   -webkit-box-shadow: 0 5px 7px #c6c6c6;
           box-shadow: 0 5px 7px #c6c6c6;
+  -webkit-animation: appear 1s ease-in-out forwards;
+          animation: appear 1s ease-in-out forwards;
+}
+
+.menu-bloc__menu-description--1 {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.menu-bloc__menu-description--2 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.menu-bloc__menu-description--3 {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+
+.menu-bloc__menu-description--4 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.menu-bloc__menu-description--5 {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+.menu-bloc__menu-description--6 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.menu-bloc__menu-description--7 {
+  -webkit-animation-delay: 1050ms;
+          animation-delay: 1050ms;
+}
+
+.menu-bloc__menu-description--8 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.menu-bloc__menu-description--9 {
+  -webkit-animation-delay: 1350ms;
+          animation-delay: 1350ms;
+}
+
+.menu-bloc__menu-description--10 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .menu-bloc__menu-text {
@@ -471,6 +545,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
 }
 
 .menu-card {
@@ -506,9 +581,15 @@
   }
 }
 
-/*==========button entrée plat dessert=========*/
+/*===============================button entrée plat dessert==============================*/
 .menu-bloc__menu-description {
   overflow: hidden;
+}
+
+.menu-bloc__menu-description:hover > .menu-bloc__menu-valeur {
+  margin-right: 0;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .menu-bloc__menu-text {
@@ -517,8 +598,7 @@
   white-space: nowrap;
 }
 
-.menu-bloc__menu-text h4,
-p {
+.menu-bloc__menu-text h4, p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -530,15 +610,12 @@ p {
   overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-.menu-bloc__menu-valeur:hover {
-  margin-right: 0;
   height: 100%;
 }
 
 .menu-bloc__menu-price {
   padding: 1rem;
+  font-weight: bold;
 }
 
 .menu-bloc__menu-validation {
@@ -556,24 +633,58 @@ p {
   width: 3rem;
   height: 100%;
   border-radius: 0 15px 15px 0;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-.menu-bloc__menu-validation:hover {
+.item__price__chosen--icon {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  border: 3px solid red;
+}
+
+.item__price__chosen--icon:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .loader {
   position: fixed;
   background-color: #fff;
-  height: 200vh;
+  height: 100vh;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   opacity: 1;
   -webkit-animation: disappear 200ms 3s forwards;
           animation: disappear 200ms 3s forwards;
@@ -697,6 +808,4 @@ p {
     background-color: #99e2d0;
   }
 }
-
-/*prix des assiettes*/
 /*# sourceMappingURL=main.css.map */
