@@ -48,22 +48,40 @@
   .emptyHeart {
     font-size: 1.7rem;
     cursor: pointer;
-    position:relative;
-    transition: color 100ms 50ms;
-    color : $color-box-shadow;
+    position: relative;
+    color: $color-box-shadow;
+    transition: color 200ms 50ms;
     &:hover {
       color: transparent;
-      border:1px solid red;
-    }
-    &:hover + .fullHeart {
-      transform: scale(1);
-       
     }
   }
+
   .fullHeart {
-    
-    background-color: linear-gradient(170deg, $color-secondary, $color-primary);
-    transform: scale(0);
-    transition: transform 150ms 50ms ease-in-out;
+    font-size: 1.7rem;
+    position: absolute;
+    background: linear-gradient(170deg, $color-secondary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+      animation: heart-animation 500ms ease-out forwards;
+    }
+  }
+}
+
+@keyframes heart-animation {
+  0% {
+    transform-origin: bottom;
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }

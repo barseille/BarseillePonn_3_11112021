@@ -19,9 +19,11 @@
   &__card {
     height: 250px;
     border-radius: 17px;
-    position: relative;
+    position:relative;
     box-shadow: 0 5px 7px $color-box-shadow;
     background-color: white;
+    
+
     @media (min-width: $desktop) {
       width: 50%;
       margin: 20px;
@@ -34,6 +36,7 @@
     border-radius: 17px 17px 0 0;
   }
   &__card-description {
+    position:relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,11 +48,12 @@
   }
   &__card-reference {
     margin-left: 20px;
+    color:black;
   }
 
   &__card-lien {
     text-decoration: none;
-    color: black;
+   
   }
   &__card-label {
     @include card-label-bloc;
@@ -58,6 +62,10 @@
     display: flex;
     align-items: center;
     font-size: 20px;
+  }
+  &__card-title {
+    font-family: "shrikhand", "Roboto", sans-serif;
+    font-size: 25px;
   }
   &__bloc {
     display: flex;
@@ -69,9 +77,5 @@
       justify-content: space-around;
     }
   }
-
-  &__card-title {
-    font-family: "shrikhand", "Roboto", sans-serif;
-    font-size: 25px;
-  }
 }
+
