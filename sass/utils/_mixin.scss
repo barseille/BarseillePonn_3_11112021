@@ -10,6 +10,7 @@
   transition: 1s;
   font-weight: bold;
   width: $btn-container-size;
+  text-align:center;
 }
 
 @mixin btn-page-menu {
@@ -84,4 +85,9 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+
+@mixin typo-logo{
+  font-family:"Shrikhand","Roboto",sans-serif;
+  font-size:30px;
 }

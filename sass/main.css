@@ -81,7 +81,7 @@
 }
 
 /*====================button "explorer..." dans accueil description (créer mixin)==============*/
-.btn {
+.btn-principal {
   margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,9 +89,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-decoration: none;
 }
 
-.btn__btn-principal {
+.btn-principal__text {
   font-size: 16px;
   padding: 18px;
   color: #fff;
@@ -106,10 +107,11 @@
   transition: 1s;
   font-weight: bold;
   width: 218px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-  .btn__btn-principal:hover {
+  .btn-principal__text:hover {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
   }
@@ -265,6 +267,8 @@
   padding: 12px;
   height: 60px;
   position: relative;
+  font-family: "Shrikhand","Roboto",sans-serif;
+  font-size: 30px;
 }
 
 .logo__header-fleche {
@@ -442,7 +446,7 @@
   text-align: center;
 }
 
-.description__p {
+.description__text {
   margin-top: 1rem;
   font-size: 20px;
   color: #6e6e6e;

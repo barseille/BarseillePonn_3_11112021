@@ -13,51 +13,51 @@
   </head>
   <body>
     <!--=================loader=============================-->
-    <div class ="loader">
-      <div class ="loader__bloc">
-      <div class ="loader__item"></div>
-      <div class ="loader__item"></div>
-      <div class ="loader__item"></div>
-      <div class ="loader__item"></div>
-      
-    </div>
+    <div class="loader">
+      <div class="loader__bloc">
+        <div class="loader__item"></div>
+        <div class="loader__item"></div>
+        <div class="loader__item"></div>
+        <div class="loader__item"></div>
+      </div>
     </div>
     <!--*****************************header***********************************-->
     <header class="header-accueil">
       <div class="logo">
-        <img class="logo__img" src="./images/ohmyfood.png" alt="ohmyfood logo" />
+        <h1 class="logo__img">ohmyfood</h1>
       </div>
 
       <form method="post" action="#" class="location">
-        <label for="map" class="location__map">
+        <span for="map" class="location__map">
           <i class="fas fa-map-marker-alt"></i>
-        </label>
+        </span>
         <input
           type="text"
           name="map"
           id="map"
           value="Paris, Belleville"
           class="location__input"
+          aria-label="Rechercher un restaurant"
         />
       </form>
     </header>
 
-    <!--**************************main*****************************************-->
+    <!--**************************div menu*****************************************-->
     <main class="menu">
       <div class="description">
-        <h1 class="description__h1">Réservez le menu qui vous convient</h1>
-        <p class="description__p">
+        <h1 class="description__title">Réservez le menu qui vous convient</h1>
+        <p class="description__text">
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
 
-        <form method="post" action="#" class="btn">
-          <button class="btn__btn-principal">
-            <span class="btn__btn-text">Explorer nos restaurants</span>
-          </button>
-        </form>
+       
+          <a href class="btn-principal">
+            <span class="btn-principal__text">Explorer nos restaurants</span>
+          </a>
+        
       </div>
 
-      <div class="fonctionnement">
+      <section class="fonctionnement">
         <h2>Fonctionnement</h2>
 
         <form method="post" action="#" class="btn-bloc">
@@ -83,7 +83,7 @@
             <span class="btn-bloc__btn-text">Dégustez au restaurant</span>
           </button>
         </form>
-      </div>
+      </section>
     </main>
 
     <!--***************************section*******************************-->

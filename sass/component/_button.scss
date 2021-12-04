@@ -38,13 +38,15 @@
 
 
   /*====================button "explorer..." dans accueil description (créer mixin)==============*/
-  .btn {
+  .btn-principal {
     margin: 2rem;
     display:flex;
       justify-content:center;
+      text-decoration:none;
   
-    &__btn-principal {
+    &__text {
       @include btn-principal-container;
+      
       
   
       @media (min-width: $tablette) {
