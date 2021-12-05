@@ -18,7 +18,7 @@
   @media (min-width: $desktop) {
     width: 30%;
   }
-  &__menu-description {
+  &__description {
     @include btn-page-menu;
     animation: appear 1s ease-in-out forwards;
     @for $i from 1 through 10 {
@@ -27,29 +27,29 @@
       }
     }
     overflow: hidden;
-    &:hover > .menu-bloc__menu-valeur {
+    &:hover > .menu-bloc__valeur {
       margin-right: 0;
     }
-    &:hover .item__price__chosen--icon {
+    &:hover .item-price {
       animation: quaterspin 0.5s ease-in-out;
     }
   }
-  &__menu-text {
+  &__text {
     padding: 1rem;
     overflow: hidden;
     white-space: nowrap;
     line-height: 1.3;
   }
-  &__menu-title {
+  &__title {
     margin-top: 36px;
   }
-  &__menu-line {
+  &__line {
     background-color: $color-tertiary;
     border: 2px solid $color-tertiary;
     margin-top: 8px;
     width: 40px;
   }
-  &__menu-valeur {
+  &__valeur {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -59,11 +59,11 @@
     flex-shrink: 0;
     height: 100%;
   }
-  &__menu-price {
+  &__price {
     padding: 1rem;
     font-weight: bold;
   }
-  &__menu-validation {
+  &__validation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +74,7 @@
     border-radius: 0 15px 15px 0;
   }
 }
-.menu-bloc__menu-text h4,
+.menu-bloc__text h4,
 p {
   text-overflow: ellipsis;
   overflow: hidden;
