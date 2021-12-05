@@ -10,7 +10,7 @@
   transition: 1s;
   font-weight: bold;
   width: $btn-container-size;
-  text-align:center;
+  text-align: center;
 }
 
 @mixin btn-page-menu {
@@ -52,9 +52,6 @@
     position: relative;
     color: $color-box-shadow;
     transition: color 200ms 50ms;
-    &:hover {
-      color: transparent;
-    }
   }
 
   .fullHeart {
@@ -87,7 +84,7 @@
   }
 }
 
-@mixin typo-logo{
-  font-family:"Shrikhand","Roboto",sans-serif;
-  font-size:30px;
+@mixin typo-logo {
+  font-family: "Shrikhand", "Roboto", sans-serif;
+  font-size: 30px;
 }

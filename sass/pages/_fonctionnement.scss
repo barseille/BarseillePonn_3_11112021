@@ -12,7 +12,8 @@
 
 .btn-bloc {
   margin-top: 23px;
-  &__btn-fonctionnement {
+  padding:0;
+  &__fonctionnement {
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -23,6 +24,7 @@
     border: none;
     font-size: 1.1rem;
     box-shadow: 0 5px 7px $color-box-shadow;
+    margin:20px 0;
     &:hover {
       transform: scale(1.02);
       background-color: #f5edff;
@@ -31,13 +33,13 @@
       }
     }
   }
-  &__btn-number {
+  &__number {
     @include fonctionnement-card-number;
   }
-  &__btn-text {
+  &__text {
     font-weight: bold;
   }
-  &__btn-icon {
+  &__icon {
     margin-right: 25px;
     color: #7e7e7e;
   }

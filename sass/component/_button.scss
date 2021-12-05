@@ -37,7 +37,7 @@
   }
 
 
-  /*====================button "explorer..." dans accueil description (créer mixin)==============*/
+  
   .btn-principal {
     margin: 2rem;
     display:flex;
@@ -46,6 +46,7 @@
   
     &__text {
       @include btn-principal-container;
+     
       
       
   
