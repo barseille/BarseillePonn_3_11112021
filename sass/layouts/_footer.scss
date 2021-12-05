@@ -1,7 +1,8 @@
 .footer {
   background-color: #353535;
   padding : 25px;
-  ul{
+
+  &__list{
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -11,10 +12,10 @@
       justify-content: space-around;
     }
   }
-}
 
-.footer-bloc{
-  &__footer-titre{
+
+
+  &__titre{
   font-family:"Shrikhand", "Roboto", sans-serif;
   color: white;
   font-size : 22px;
@@ -22,13 +23,14 @@
       display: flex;
       justify-content: center;
     }
-}
-  &__footer-icon{
+  }
+
+  &__icon{
   list-style-type: none;
   margin-top: 14px;
  
 }
-  &__footer-text{
+  &__text{
   color: white;
   text-decoration: none;
 }

@@ -1,9 +1,8 @@
-
 .section-restaurant {
   background-color: $color-background;
   padding: 53px 20px 63px 20px;
   @media (min-width: $desktop) {
-    h2 {
+    .sous-titre {
       text-align: center;
     }
   }
@@ -15,58 +14,6 @@
   flex-direction: column;
   width: 100%;
   gap: 17px;
-
-  &__card {
-    height: 250px;
-    border-radius: 17px;
-    position:relative;
-    box-shadow: 0 5px 7px $color-box-shadow;
-    background-color: white;
-    
-
-    @media (min-width: $desktop) {
-      width: 50%;
-      margin: 20px;
-    }
-  }
-  &__card-img {
-    height: 175px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 17px 17px 0 0;
-  }
-  &__card-description {
-    position:relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 18px 0 18px;
-    border-radius: 0 0 17px 17px;
-    margin-right: 20px;
-    @include heart-transition;
-    
-  }
-  &__card-reference {
-    margin-left: 20px;
-    color:black;
-  }
-
-  &__card-lien {
-    text-decoration: none;
-   
-  }
-  &__card-label {
-    @include card-label-bloc;
-  }
-  &__card-icon {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-  }
-  &__card-title {
-    font-family: "shrikhand", "Roboto", sans-serif;
-    font-size: 25px;
-  }
   &__bloc {
     display: flex;
     flex-direction: column;
@@ -78,4 +25,52 @@
     }
   }
 }
+.resto-card {
+  height: 250px;
+  border-radius: 17px;
+  position: relative;
+  box-shadow: 0 5px 7px $color-box-shadow;
+  background-color: white;
 
+  @media (min-width: $desktop) {
+    width: 50%;
+    margin: 20px;
+  }
+
+  &__img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 17px 17px 0 0;
+  }
+  &__description {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 18px 0 18px;
+    border-radius: 0 0 17px 17px;
+    margin-right: 20px;
+    @include heart-transition;
+  }
+  &__reference {
+    margin-left: 20px;
+    color: black;
+  }
+
+  &__lien {
+    text-decoration: none;
+  }
+  &__label {
+    @include card-label-bloc;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  &__title {
+    font-family: "shrikhand", "Roboto", sans-serif;
+    font-size: 25px;
+  }
+}

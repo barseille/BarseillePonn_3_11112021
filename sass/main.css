@@ -294,7 +294,7 @@
   padding: 25px;
 }
 
-.footer ul {
+.footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,7 +307,7 @@
 }
 
 @media (min-width: 768px) {
-  .footer ul {
+  .footer__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -317,14 +317,14 @@
   }
 }
 
-.footer-bloc__footer-titre {
+.footer__titre {
   font-family: "Shrikhand", "Roboto", sans-serif;
   color: white;
   font-size: 22px;
 }
 
 @media (min-width: 768px) {
-  .footer-bloc__footer-titre {
+  .footer__titre {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -334,12 +334,12 @@
   }
 }
 
-.footer-bloc__footer-icon {
+.footer__icon {
   list-style-type: none;
   margin-top: 14px;
 }
 
-.footer-bloc__footer-text {
+.footer__text {
   color: white;
   text-decoration: none;
 }
@@ -471,7 +471,7 @@
 }
 
 @media (min-width: 1024px) {
-  .section-restaurant h2 {
+  .section-restaurant .sous-titre {
     text-align: center;
   }
 }
@@ -487,111 +487,6 @@
           flex-direction: column;
   width: 100%;
   gap: 17px;
-}
-
-.restaurant__card {
-  height: 250px;
-  border-radius: 17px;
-  position: relative;
-  -webkit-box-shadow: 0 5px 7px #c6c6c6;
-          box-shadow: 0 5px 7px #c6c6c6;
-  background-color: white;
-}
-
-@media (min-width: 1024px) {
-  .restaurant__card {
-    width: 50%;
-    margin: 20px;
-  }
-}
-
-.restaurant__card-img {
-  height: 175px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 17px 17px 0 0;
-}
-
-.restaurant__card-description {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 18px 18px 0 18px;
-  border-radius: 0 0 17px 17px;
-  margin-right: 20px;
-}
-
-.restaurant__card-description .emptyHeart {
-  font-size: 1.7rem;
-  cursor: pointer;
-  position: relative;
-  color: #c6c6c6;
-  -webkit-transition: color 200ms 50ms;
-  transition: color 200ms 50ms;
-}
-
-.restaurant__card-description .emptyHeart:hover {
-  color: transparent;
-}
-
-.restaurant__card-description .fullHeart {
-  font-size: 1.7rem;
-  position: absolute;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-
-.restaurant__card-description .fullHeart:hover {
-  opacity: 1;
-  -webkit-animation: heart-animation 500ms ease-out forwards;
-          animation: heart-animation 500ms ease-out forwards;
-}
-
-.restaurant__card-reference {
-  margin-left: 20px;
-  color: black;
-}
-
-.restaurant__card-lien {
-  text-decoration: none;
-}
-
-.restaurant__card-label {
-  font-weight: bold;
-  position: absolute;
-  right: 11px;
-  top: 14px;
-  border: 1px solid #99e2d0;
-  border-radius: 5px;
-  background-color: #99e2d0;
-  color: #4cb49b;
-  padding: 10px;
-}
-
-.restaurant__card-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 20px;
-}
-
-.restaurant__card-title {
-  font-family: "shrikhand", "Roboto", sans-serif;
-  font-size: 25px;
 }
 
 .restaurant__bloc {
@@ -617,6 +512,111 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+.resto-card {
+  height: 250px;
+  border-radius: 17px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 7px #c6c6c6;
+          box-shadow: 0 5px 7px #c6c6c6;
+  background-color: white;
+}
+
+@media (min-width: 1024px) {
+  .resto-card {
+    width: 50%;
+    margin: 20px;
+  }
+}
+
+.resto-card__img {
+  height: 175px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 17px 17px 0 0;
+}
+
+.resto-card__description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 18px 0 18px;
+  border-radius: 0 0 17px 17px;
+  margin-right: 20px;
+}
+
+.resto-card__description .emptyHeart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  color: #c6c6c6;
+  -webkit-transition: color 200ms 50ms;
+  transition: color 200ms 50ms;
+}
+
+.resto-card__description .emptyHeart:hover {
+  color: transparent;
+}
+
+.resto-card__description .fullHeart {
+  font-size: 1.7rem;
+  position: absolute;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.resto-card__description .fullHeart:hover {
+  opacity: 1;
+  -webkit-animation: heart-animation 500ms ease-out forwards;
+          animation: heart-animation 500ms ease-out forwards;
+}
+
+.resto-card__reference {
+  margin-left: 20px;
+  color: black;
+}
+
+.resto-card__lien {
+  text-decoration: none;
+}
+
+.resto-card__label {
+  font-weight: bold;
+  position: absolute;
+  right: 11px;
+  top: 14px;
+  border: 1px solid #99e2d0;
+  border-radius: 5px;
+  background-color: #99e2d0;
+  color: #4cb49b;
+  padding: 10px;
+}
+
+.resto-card__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+.resto-card__title {
+  font-family: "shrikhand", "Roboto", sans-serif;
+  font-size: 25px;
 }
 
 .menu-page {
