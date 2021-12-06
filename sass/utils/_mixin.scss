@@ -1,7 +1,7 @@
 @mixin btn-principal-container {
   font-size: 16px;
   padding: 18px;
-  color: #fff;
+  color: $color-white;
   background: $color-linear;
   cursor: pointer;
   border-radius: 25px;
@@ -11,10 +11,18 @@
   font-weight: bold;
   width: $btn-container-size;
   text-align: center;
+  &:hover{
+  background: linear-gradient(170deg, lighten($color-secondary, 8%), lighten($color-primary, 8%));
+  @include box-shadow(darken($color-box-shadow, 50%));
+  }
+}
+
+@mixin box-shadow ($color: darken($color-box-shadow, 20%)) {
+  box-shadow: 0 3px 8px $color;
 }
 
 @mixin btn-page-menu {
-  background-color: white;
+  background-color: $color-white;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -38,7 +46,7 @@
 
 @mixin fonctionnement-card-number {
   background-color: $color-primary;
-  color: white;
+  color: $color-white;
   border-radius: 50px;
   padding: 5px 10px;
   margin-right: 25px;
@@ -73,18 +81,18 @@
   0% {
     transform-origin: bottom;
     transform: scale(0.1);
-    opacity: 1;
+    
   }
   80% {
     transform: scale(1.2);
   }
   100% {
     transform: scale(1);
-    opacity: 1;
+   
   }
 }
 
 @mixin typo-logo {
-  font-family: "Shrikhand", "Roboto", sans-serif;
+  font-family:$font-shrikhand ;
   font-size: 30px;
 }

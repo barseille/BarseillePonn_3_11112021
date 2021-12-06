@@ -16,8 +16,8 @@
       @include typo-logo;
     }
     /*=================header page menu=========================*/
-    &__header-fleche{
-      color:black;
+    &__back-link{
+      color:$color-black;
       position:absolute;
       left:21px;
       &:hover{

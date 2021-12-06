@@ -1,6 +1,6 @@
 .loader {
     position: fixed;
-    background-color: #fff;
+    background-color:$color-white;
     height: 100vh;
     right: 0;
     left: 0;
@@ -17,7 +17,7 @@
     }
   
     &__item {
-      background-color: #fff;
+      background-color:$color-white;
       width: 40px;
       height: 40px;
       border-radius: 50%;

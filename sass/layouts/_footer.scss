@@ -1,5 +1,5 @@
 .footer {
-  background-color: #353535;
+  background-color:$color-background-footer;
   padding : 25px;
 
   &__list{
@@ -16,8 +16,8 @@
 
 
   &__titre{
-  font-family:"Shrikhand", "Roboto", sans-serif;
-  color: white;
+  font-family:$font-shrikhand;
+  color: $color-white;
   font-size : 22px;
   @media (min-width: $tablette){
       display: flex;
@@ -31,7 +31,7 @@
  
 }
   &__text{
-  color: white;
+  color: $color-white;
   text-decoration: none;
 }
 }

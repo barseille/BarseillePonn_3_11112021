@@ -1,12 +1,20 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+//======= UTILS 
 @import "./utils/variable";
 @import "./utils/mixin";
+
+//====== BASE
 @import "./base/config";
+
+//======== COMPONENTS
 @import "./component/button";
 @import "./component/loader";
+@import "./component/card-restaurant";
+
+//======== LAYOUTS
 @import "./layouts/header";
 @import "./layouts/footer";
+
+//====== PAGES
 @import "./pages/fonctionnement";
 @import "./pages/accueil-description";
 @import "./pages/section-restaurant";

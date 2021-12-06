@@ -28,7 +28,7 @@
     &:hover {
       transform: scale(1.02);
       background-color: #f5edff;
-      &:hover > .fas {
+      & .fas {
         color: $color-primary;
       }
     }
