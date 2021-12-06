@@ -11,13 +11,17 @@
   font-weight: bold;
   width: $btn-container-size;
   text-align: center;
-  &:hover{
-  background: linear-gradient(170deg, lighten($color-secondary, 8%), lighten($color-primary, 8%));
-  @include box-shadow(darken($color-box-shadow, 50%));
+  &:hover {
+    background: linear-gradient(
+      170deg,
+      lighten($color-secondary, 8%),
+      lighten($color-primary, 8%)
+    );
+    @include box-shadow(darken($color-box-shadow, 50%));
   }
 }
 
-@mixin box-shadow ($color: darken($color-box-shadow, 20%)) {
+@mixin box-shadow($color: darken($color-box-shadow, 20%)) {
   box-shadow: 0 3px 8px $color;
 }
 
@@ -81,18 +85,16 @@
   0% {
     transform-origin: bottom;
     transform: scale(0.1);
-    
   }
   80% {
     transform: scale(1.2);
   }
   100% {
     transform: scale(1);
-   
   }
 }
 
 @mixin typo-logo {
-  font-family:$font-shrikhand ;
+  font-family: $font-shrikhand;
   font-size: 30px;
 }
