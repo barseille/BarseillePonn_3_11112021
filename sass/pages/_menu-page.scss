@@ -42,12 +42,7 @@
   }
   &__title {
     margin-top: 36px;
-  }
-  &__line {
-    background-color: $color-tertiary;
-    border: 2px solid $color-tertiary;
-    margin-top: 8px;
-    width: 40px;
+   font-weight:300;
   }
   &__valeur {
     display: flex;
@@ -76,6 +71,14 @@
   &__meal {
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+  .menu-bloc__title::after{
+    content:"";
+    display:block;
+    background-color:$color-tertiary;
+    border:2px solid $color-tertiary;
+    margin-top:8px;
+    width:40px;
   }
 }
 
