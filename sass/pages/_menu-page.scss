@@ -22,7 +22,7 @@
     @include btn-page-menu;
     animation: appear 1s ease-in-out forwards;
     @for $i from 1 through 10 {
-      &--#{$i} {
+      &:nth-child(#{$i}) {
         animation-delay: 150ms * $i;
       }
     }

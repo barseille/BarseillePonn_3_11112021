@@ -330,8 +330,6 @@ body {
   cursor: pointer;
   position: relative;
   color: #c6c6c6;
-  -webkit-transition: color 200ms 50ms;
-  transition: color 200ms 50ms;
 }
 
 .resto-card__description .fullHeart {
@@ -670,52 +668,52 @@ body {
   overflow: hidden;
 }
 
-.menu-bloc__description--1 {
+.menu-bloc__description:nth-child(1) {
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
 
-.menu-bloc__description--2 {
+.menu-bloc__description:nth-child(2) {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
-.menu-bloc__description--3 {
+.menu-bloc__description:nth-child(3) {
   -webkit-animation-delay: 450ms;
           animation-delay: 450ms;
 }
 
-.menu-bloc__description--4 {
+.menu-bloc__description:nth-child(4) {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
-.menu-bloc__description--5 {
+.menu-bloc__description:nth-child(5) {
   -webkit-animation-delay: 750ms;
           animation-delay: 750ms;
 }
 
-.menu-bloc__description--6 {
+.menu-bloc__description:nth-child(6) {
   -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
 }
 
-.menu-bloc__description--7 {
+.menu-bloc__description:nth-child(7) {
   -webkit-animation-delay: 1050ms;
           animation-delay: 1050ms;
 }
 
-.menu-bloc__description--8 {
+.menu-bloc__description:nth-child(8) {
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
 }
 
-.menu-bloc__description--9 {
+.menu-bloc__description:nth-child(9) {
   -webkit-animation-delay: 1350ms;
           animation-delay: 1350ms;
 }
 
-.menu-bloc__description--10 {
+.menu-bloc__description:nth-child(10) {
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
 }
