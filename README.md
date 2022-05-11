@@ -46,7 +46,7 @@ Taper "entrer" pour accepter
 
 ```bash
 "scripts": {
- "sass": "sass --watch ./main.scss:.public/css/style.css"
+ "sass": "sass --watch ./main.scss:.public/css/main.css"
 },
 ```
 5 - Lancer sass :
