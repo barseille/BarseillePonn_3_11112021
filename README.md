@@ -42,7 +42,7 @@ puis
 
 Taper "entrer" pour accepter
 
-4 - Dans fichier "package.json", Modifier le chemin <script> (adapter selon où se trouve votre fichier "style.css") :
+4 - Dans fichier "package.json", Modifier le chemin <script> (adapter selon où se trouve votre fichier ".css") :
 
 ```bash
 "scripts": {
